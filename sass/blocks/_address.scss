@@ -1,0 +1,24 @@
+.address{
+	text-align: right;
+	@include clearfix;
+	margin-bottom: 18px;
+	p{
+		color: #555454;
+		font-size: 14px;
+		line-height: 1;
+		float: right;
+		&:first-child{
+			position: relative;
+			&:before{
+				content: '';
+				position: absolute;
+				left: -24px;
+				top: 2px;
+				width: 13px;
+				height: 16px;
+				background: url('../images/icons.png');
+				background-position: 0 -16px;
+			}
+		}
+	}
+}

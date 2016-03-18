@@ -1,0 +1,19 @@
+.menu-top{
+	padding: 7px 0;
+	&_item{
+		display: inline;
+		border-left: 1px solid #c4c4c4;
+		padding: 0 0 0 10px;
+		margin-left: 10px;
+		&:first-child{
+			border: none;
+		}
+	}
+	&_link{
+		@include link(#fdfdfd, #fdfdfd);
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}

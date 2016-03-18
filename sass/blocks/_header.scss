@@ -1,0 +1,44 @@
+.header{
+	&_wrap{
+		@include clearfix;
+	}
+	&_top{
+		background-color: #7f7f82;
+		font-size: 16px;
+		text-align: right;
+	}
+	&_right{
+		float: right;
+		width: 210px;
+		//margin-left: 27px;
+		//background-color: #ccc;
+	}
+	&_left{
+		//background-color: #999;
+		//overflow: hidden;
+		//float: left;
+		//width: 100%;
+		margin-right: 237px;
+	}
+	&_logo{
+		margin-top: 18px;
+		display: block;
+		max-width: 500px;
+		img{
+			width: 100%;
+			max-width: 496px;
+			height: auto;
+		}
+	}
+	&_link{
+		display: block;
+		background: url('../images/button-bac.png') repeat-x;
+		@include link(#fdf9f9, #fdf9f9);
+		font-family: $fontBold;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 1.85;
+		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.24);
+	}
+}

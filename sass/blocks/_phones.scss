@@ -1,0 +1,16 @@
+.phones{
+	margin: 21px 0 15px;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		left: -24px;
+		top: 3px;
+		width: 13px;
+		height: 16px;
+		background: url('../images/icons.png');
+	}
+	p{
+		line-height: 1;
+	}
+}

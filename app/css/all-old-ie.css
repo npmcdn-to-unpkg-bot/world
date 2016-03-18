@@ -2798,3 +2798,229 @@ pre {
 
 .cboxSlideshow_off #cboxSlideshow:hover {
   background-position: -75px -25px; }
+
+.header_wrap {
+  *zoom: 1; }
+  .header_wrap:before, .header_wrap:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .header_wrap:after {
+    clear: both; }
+
+.header_top {
+  background-color: #7f7f82;
+  font-size: 16px;
+  text-align: right; }
+
+.header_right {
+  float: right;
+  width: 210px; }
+
+.header_left {
+  margin-right: 237px; }
+
+.header_logo {
+  margin-top: 18px;
+  display: block;
+  max-width: 500px; }
+  .header_logo img {
+    width: 100%;
+    max-width: 496px;
+    height: auto; }
+
+.header_link {
+  display: block;
+  background: url("../images/button-bac.png") repeat-x;
+  color: #fdf9f9;
+  font-family: AvantGardeCTT-Bold, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.85;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24); }
+  .header_link:link {
+    color: #fdf9f9; }
+  .header_link:visited {
+    color: #fdf9f9; }
+  .header_link:hover {
+    color: #fdf9f9; }
+  .header_link:active {
+    color: #fdf9f9; }
+
+.menu-top {
+  padding: 7px 0; }
+  .menu-top_item {
+    display: inline;
+    border-left: 1px solid #c4c4c4;
+    padding: 0 0 0 10px;
+    margin-left: 10px; }
+    .menu-top_item:first-child {
+      border: none; }
+  .menu-top_link {
+    color: #fdfdfd;
+    text-decoration: none; }
+    .menu-top_link:link {
+      color: #fdfdfd; }
+    .menu-top_link:visited {
+      color: #fdfdfd; }
+    .menu-top_link:hover {
+      color: #fdfdfd; }
+    .menu-top_link:active {
+      color: #fdfdfd; }
+    .menu-top_link:hover {
+      text-decoration: underline; }
+
+.menu-main {
+  text-align: center; }
+  .menu-main_inner {
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    left: 0px;
+    overflow: hidden;
+    visibility: hidden; }
+  .menu-main_list {
+    background-color: #5da9b4;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24); }
+    .menu-main_list__l2 {
+      text-align: left;
+      padding: 5px 0 3px;
+      min-width: 150px;
+      background-color: #5da9b4;
+      visibility: hidden;
+      -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      transform: translateY(-100%);
+      -webkit-transition: visibility 0s linear 200ms, -webkit-transform 200ms linear;
+      transition: visibility 0s linear 200ms, -webkit-transform 200ms linear;
+      transition: visibility 0s linear 200ms, transform 200ms linear;
+      transition: visibility 0s linear 200ms, transform 200ms linear, -webkit-transform 200ms linear; }
+      .menu-main_item:hover .menu-main_list__l2 {
+        visibility: visible;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s; }
+  .menu-main_item {
+    display: inline-block;
+    position: relative;
+    *display: inline;
+    *zoom: 1;
+    /*&.expanded{
+      margin: 0!important;
+      padding: 0 10px!important;
+      list-style-type: none!important;
+    }*/ }
+    .menu-main_item__l2 {
+      padding: 0 12px; }
+      .menu-main_item__l2:hover {
+        background-color: #7f7f82; }
+  .menu-main_link {
+    font-size: 18px;
+    font-family: AvantGardeCTT-Bold, sans-serif;
+    color: #fdfdfd;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 12px 7px 17px;
+    position: relative;
+    z-index: 11;
+    *display: inline;
+    *zoom: 1; }
+    .menu-main_link:link {
+      color: #fdfdfd; }
+    .menu-main_link:visited {
+      color: #fdfdfd; }
+    .menu-main_link:hover {
+      color: #fdfdfd; }
+    .menu-main_link:active {
+      color: #fdfdfd; }
+    .menu-main_item:hover .menu-main_link:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 5px;
+      background-color: #f3841b; }
+    @media all and (max-width: 1023px) {
+      .menu-main_link {
+        font-size: 16px;
+        padding: 7px 8px 7px 13px; } }
+    .menu-main_link:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 1px;
+      height: 10px;
+      margin-top: -3px;
+      background-color: #fdfcfc; }
+      .menu-main_item:first-child .menu-main_link:before {
+        display: none; }
+    .menu-main_link__l2 {
+      color: #fefdfd;
+      font-family: AvantGardeCTT-Regular, sans-serif;
+      font-size: 11px;
+      text-decoration: none;
+      display: block;
+      padding: 3px 7px;
+      border-top: 1px solid #388590; }
+      .menu-main_link__l2:link {
+        color: #fefdfd; }
+      .menu-main_link__l2:visited {
+        color: #fefdfd; }
+      .menu-main_link__l2:hover {
+        color: #fefdfd; }
+      .menu-main_link__l2:active {
+        color: #fefdfd; }
+      .menu-main_item__l2:first-child .menu-main_link__l2 {
+        border: none; }
+      .menu-main_item__l2:hover + .menu-main_item__l2 .menu-main_link__l2 {
+        border-color: #5da9b4; }
+
+.phones {
+  margin: 21px 0 15px;
+  position: relative; }
+  .phones:before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    top: 3px;
+    width: 13px;
+    height: 16px;
+    background: url("../images/icons.png"); }
+  .phones p {
+    line-height: 1; }
+
+.address {
+  text-align: right;
+  *zoom: 1;
+  margin-bottom: 18px; }
+  .address:before, .address:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .address:after {
+    clear: both; }
+  .address p {
+    color: #555454;
+    font-size: 14px;
+    line-height: 1;
+    float: right; }
+    .address p:first-child {
+      position: relative; }
+      .address p:first-child:before {
+        content: '';
+        position: absolute;
+        left: -24px;
+        top: 2px;
+        width: 13px;
+        height: 16px;
+        background: url("../images/icons.png");
+        background-position: 0 -16px; }
