@@ -1,0 +1,17 @@
+.footer-contacts{
+	&_title{
+		color: #fdfdfd;
+		font-family: $fontBold;
+		font-size: 19px;
+		margin-bottom: 30px;
+		span{
+			display: inline-block;
+			border-bottom: 2px solid #cf7d2e;
+			padding-bottom: 6px;
+		}
+	}
+	p{
+		font-size: 18px;
+		color: #fdfcfc;
+	}
+}

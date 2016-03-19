@@ -1,0 +1,38 @@
+.footer{
+	&_top{
+		box-shadow: inset 0 15px 7px -15px rgba(94,94,94,.6),
+								inset 0 -15px 7px -15px rgba(94,94,94,.3);
+		background-color: #53a9b6;
+	}
+	&_bottom{
+		background-color: #69696c;
+		padding: 28px 0 55px;
+	}
+	&_wrap{
+		@include clearfix;
+	}
+	&_item{
+		float: left;
+		width: 33.33%;
+	}
+	&_phrase{
+		max-width: 947px;
+		height: 180px;
+		margin: 0 auto;
+		background: url('../images/footer-top.png') 50% 40% no-repeat;
+		background-size: contain;
+	}
+	&_logo{
+		margin-top: 18px;
+		display: block;
+		max-width: 235px;
+		float: right;
+		margin-bottom: 60px;
+		position: relative;
+		top: -11px;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+}
