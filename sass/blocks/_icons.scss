@@ -1,0 +1,39 @@
+.icons{
+	padding: 35px 0 75px 0;
+	&_wrap{
+		@include clearfix;
+	}
+	&_item{
+		float: left;
+		width: 30%;
+		margin-left: 5%;
+		position: relative;
+		box-shadow: 0px -4px 21px 0px rgba(0,0,0,0.35);
+		&:first-child{
+			margin: 0;
+		}
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&_title{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 12px 10px;
+		text-align: center;
+		background-color: #44a2b0;
+		color: #fefefe;
+		font-family: $fontBold;
+		font-size: 18px;
+		opacity: 0.8;
+		line-height: 1;
+		transition: background-color 0.2s;
+		.icons_item:hover &{
+			background-color: #f3841b;
+		}
+	}
+}

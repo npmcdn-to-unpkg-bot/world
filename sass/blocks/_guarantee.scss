@@ -1,0 +1,28 @@
+.guarantee{
+	padding: 0 60px 80px 60px;
+	&_h1{
+		font-family: $fontBold;
+		font-size: 22px;
+		color: #61605f;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	&_wrap{
+		@include clearfix;
+	}
+	&_item{
+		height: 100px;
+		float: left;
+		width: 46%;
+		padding: 0 0 0 0;
+		margin-left: 2%;
+		img{
+			float: left;
+		}
+		p{
+			text-indent: 0;
+			padding: 5px 0 0 70px;
+			font-size: 20px;
+		}
+	}
+}
