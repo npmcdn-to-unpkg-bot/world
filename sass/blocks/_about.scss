@@ -1,0 +1,30 @@
+.about{
+	img:first-child{
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-bottom: 50px;
+	}
+	p{
+		font-size: 21px;
+		margin-bottom: 24px;
+		line-height: 1.25;
+	}
+	ul{
+		margin: -16px 0 58px 0;
+		padding-left: 38px;
+		li{
+			margin-bottom: 5px;
+			position: relative;
+			&:before{
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: -29px;
+				width: 11px;
+				height: 5px;
+				background-color: #5da9b4;
+			}
+		}
+	}
+}

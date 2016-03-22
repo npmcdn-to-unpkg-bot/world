@@ -1,0 +1,14 @@
+.sidelka{
+	@include clearfix;
+	img:first-child{
+		float: left;
+		margin-right: 35px;
+	}
+	p{
+		font-size: 18px;
+		line-height: 1.1;
+		margin-top: 15px;
+		margin-bottom: 24px;
+		text-align: justify;
+	}
+}

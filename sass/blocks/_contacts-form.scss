@@ -1,0 +1,93 @@
+.contacts-form{
+	&_title{
+		font-family: $fontBold;
+		font-size: 28px;
+		color: #69696c;
+		text-align: center;
+		margin-bottom: 22px;
+	}
+	& .messages{
+		display: none;
+	}
+	&_inner{
+		margin: 0 0 10px 0;
+		input{
+			width: 100%;
+			line-height: 3;
+			padding: 0 15px;
+			border: none;
+			text-align: center;
+			font-size: 16px;
+			box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.51);
+			&.error{
+				box-shadow: inset 0px 0px 5px 1px rgba(255,0,0,1),
+										1px 0px 1px 0px rgba(0,0,0,0.3);
+			}
+		}		
+	}
+	&_text{
+		margin: 25px 0 10px 0;
+		textarea{
+			width: 100%;
+			height: 160px;
+			padding: 15px;
+			border: none;
+			text-align: center;
+			box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.51);
+		}
+	}
+	&_button{
+		margin: 35px 0 8px 0;
+		position: relative;
+		input{
+			display: block;
+			width: 206px;
+			margin: 0 auto;
+			background: url('../images/form-contacts-button-bac.png') repeat-x;
+			border: none;
+			font-family: $fontBold;
+			font-size: 17px;
+			text-transform: uppercase;
+			color: #fdf9f9;
+			line-height: 2.1;
+			cursor: pointer;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.24);
+		}
+	}
+	::-webkit-input-placeholder {
+	  font-family: $font;
+	  color: #6a6a6d;
+	  font-size: 18px;
+	  opacity: 1;
+	}
+	:-moz-placeholder {
+	  font-family: $font;
+	  color: #6a6a6d;
+	  font-size: 18px;
+	  opacity: 1;
+	}
+	::-moz-placeholder {
+	  font-family: $font;
+	  color: #6a6a6d;
+	  font-size: 18px;
+	  opacity: 1;
+	}
+	:-ms-input-placeholder {
+	  font-family: $font;
+	  color: #6a6a6d;
+	  font-size: 18px;
+	  opacity: 1;
+	}
+	::-ms-input-placeholder {
+	  font-family: $font;
+	  color: #6a6a6d;
+	  font-size: 18px;
+	  opacity: 1;
+	}
+	:placeholder-shown {
+	  font-family: $font;
+	  color: #6a6a6d;
+	  font-size: 18px;
+	  opacity: 1;
+	}
+}

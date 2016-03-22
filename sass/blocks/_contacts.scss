@@ -1,0 +1,12 @@
+.contacts{
+	&_wrap{
+		@include clearfix;
+	}
+	&_right{
+		float: right;
+		width: 323px;
+	}
+	&_left{
+		margin-right: 323px;
+	}
+}

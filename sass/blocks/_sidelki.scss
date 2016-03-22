@@ -1,0 +1,40 @@
+.sidelki{
+	@include clearfix;
+	margin: 0 -1.25%;
+	&_item{
+		float: left;
+		width: 22.5%;
+		margin: 0 1.25%;
+		text-decoration: none;
+		//position: relative;
+		img{
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+		span{
+			display: block;
+			width: 100%;
+			background-color: #44a2b0;
+			font-size: 16px;
+			color: #fefefe;
+			text-align: center;
+			padding: 12px 5px 26px 5px;
+			position: relative;
+			&:before{
+				content: 'Подробнее >>';
+				position: absolute;
+				bottom: 8px;
+				right: 13px;
+				font-size: 10px;
+				color: #282828;
+			}
+		}
+		&:nth-child(even) span{
+			background-color: #de832c;
+		}
+	}
+	&_wrap{
+		
+	}
+}

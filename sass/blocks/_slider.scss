@@ -4,6 +4,7 @@
 	padding: 57px 0 53px 0;
 	max-height: 520px;
 	overflow: hidden;
+  margin-top: 16px;
 	&_wrap{
 		@include clearfix;
 	}

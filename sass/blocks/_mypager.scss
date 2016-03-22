@@ -1,0 +1,20 @@
+.mypager{
+	text-align: center;
+	padding-top: 23px;
+	&_item{
+		display: inline-block;
+		font-size: 18px;
+		padding: 4px 3px;
+		&__current{
+			padding: 4px 9px;
+			border-radius: 10px;
+			font-size: 24px;
+			color: #44a2b0;
+		}
+		a{
+			font-size: 18px;
+			text-decoration: none;
+			@include link(#6a6a6d, #6a6a6d);
+		}
+	}
+}

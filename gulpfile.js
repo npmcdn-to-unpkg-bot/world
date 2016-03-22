@@ -25,7 +25,7 @@ gulp.task('connect', function() {
 
 // html
 gulp.task('html', function() {
-  gulp.src('app/index.html')
+  gulp.src('app/*.html')
   .pipe(connect.reload())
   .pipe(notify('HTML - Done!'));
 })
@@ -104,7 +104,7 @@ gulp.task('bower', function () {
 gulp.task('watch', function () {
   gulp.watch('sass/**/*.scss', ['css']);
   gulp.watch('bower.json', ['bower']);
-  gulp.watch('app/index.html', ['html']);
+  gulp.watch('app/*.html', ['html']);
 });
 
 // default
