@@ -1,6 +1,7 @@
 .mypager{
 	text-align: center;
 	padding-top: 23px;
+	@include clearfix;
 	&_item{
 		display: inline-block;
 		font-size: 18px;

@@ -33,4 +33,33 @@
 			background-color: #44a2b0;
 		}
 	}
+	h2{
+  	font-size: 28px;
+  	text-transform: uppercase;  
+		font-family: $fontBold;
+		color: #5eabb7;
+		position: relative;
+		padding: 0 190px;
+		margin-bottom: 25px;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 93px;
+			top: 10px;
+			width: 80px;
+			height: 2px;
+			background-color: #44a2b0;
+		}
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			right: 93px;
+			top: 10px;
+			width: 80px;
+			height: 2px;
+			background-color: #44a2b0;
+		}
+	}
 }

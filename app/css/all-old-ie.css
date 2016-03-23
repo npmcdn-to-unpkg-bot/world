@@ -2868,11 +2868,19 @@ pre {
     .menu-top_link:visited {
       color: #fdfdfd; }
     .menu-top_link:hover {
-      color: #fdfdfd; }
+      color: #323232; }
     .menu-top_link:active {
-      color: #fdfdfd; }
-    .menu-top_link:hover {
-      text-decoration: underline; }
+      color: #323232; }
+    .menu-top_link__active {
+      color: #323232; }
+      .menu-top_link__active:link {
+        color: #323232; }
+      .menu-top_link__active:visited {
+        color: #323232; }
+      .menu-top_link__active:hover {
+        color: #323232; }
+      .menu-top_link__active:active {
+        color: #323232; }
 
 .menu-main {
   text-align: center;
@@ -2941,7 +2949,8 @@ pre {
       color: #fdfdfd; }
     .menu-main_link:active {
       color: #fdfdfd; }
-    .menu-main_item:hover .menu-main_link:after {
+    .menu-main_item:hover .menu-main_link:after,
+    .menu-main_item__active .menu-main_link:after {
       content: '';
       position: absolute;
       left: 0;
@@ -3825,7 +3834,9 @@ pre {
       color: #fefefe;
       text-align: center;
       padding: 12px 5px 26px 5px;
-      position: relative; }
+      position: relative;
+      -webkit-transition: background-color 0.2s;
+      transition: background-color 0.2s; }
       .sidelki_item span:before {
         content: 'Подробнее >>';
         position: absolute;
@@ -3835,10 +3846,20 @@ pre {
         color: #282828; }
     .sidelki_item:nth-child(even) span {
       background-color: #de832c; }
+    .sidelki_item:hover span {
+      background-color: #7f7f82; }
 
 .mypager {
   text-align: center;
-  padding-top: 23px; }
+  padding-top: 23px;
+  *zoom: 1; }
+  .mypager:before, .mypager:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .mypager:after {
+    clear: both; }
   .mypager_item {
     display: inline-block;
     font-size: 18px;
@@ -4231,6 +4252,32 @@ pre {
       height: 2px;
       background-color: #44a2b0; }
     .title h1:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 93px;
+      top: 10px;
+      width: 80px;
+      height: 2px;
+      background-color: #44a2b0; }
+  .title h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: AvantGardeCTT-Bold, sans-serif;
+    color: #5eabb7;
+    position: relative;
+    padding: 0 190px;
+    margin-bottom: 25px; }
+    .title h2:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 93px;
+      top: 10px;
+      width: 80px;
+      height: 2px;
+      background-color: #44a2b0; }
+    .title h2:after {
       content: '';
       display: block;
       position: absolute;

@@ -10,10 +10,10 @@
 		}
 	}
 	&_link{
-		@include link(#fdfdfd, #fdfdfd);
+		@include link(#fdfdfd, #323232);
 		text-decoration: none;
-		&:hover{
-			text-decoration: underline;
+		&__active{
+			@include link(#323232, #323232);
 		}
 	}
 }

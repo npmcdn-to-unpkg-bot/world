@@ -6,7 +6,6 @@
 		width: 22.5%;
 		margin: 0 1.25%;
 		text-decoration: none;
-		//position: relative;
 		img{
 			width: 100%;
 			height: auto;
@@ -21,6 +20,7 @@
 			text-align: center;
 			padding: 12px 5px 26px 5px;
 			position: relative;
+			transition: background-color 0.2s;
 			&:before{
 				content: 'Подробнее >>';
 				position: absolute;
@@ -32,6 +32,9 @@
 		}
 		&:nth-child(even) span{
 			background-color: #de832c;
+		}
+		&:hover span{
+			background-color: #7f7f82;
 		}
 	}
 	&_wrap{

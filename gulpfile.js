@@ -49,7 +49,7 @@ gulp.task('css', function () {
     }))
     .pipe(gulp.dest('css'))
     .pipe(gulp.dest('app/css'))
-    .pipe(gulp.dest('d:/OpenServer/domains/kamfree/sites/all/themes/kamfree/css'))
+    .pipe(gulp.dest('d:/OpenServer/domains/world/sites/all/themes/world/css'))
     .pipe(connect.reload())
     .pipe(notify('CSS - Done!'));
 });
@@ -68,7 +68,7 @@ gulp.task('cleanJS', function () {
 gulp.task('imageMin', function () {
     return gulp.src('app/images/**/*.*')
       .pipe(imagemin())
-      .pipe(gulp.dest('temp/images'));
+      .pipe(gulp.dest('dist/images'));
 });
 //JS
 gulp.task('js', function () {
@@ -80,16 +80,16 @@ gulp.task('js', function () {
 // Fonts
 gulp.task('fonts', function() {
     return gulp.src(['app/fonts/**/*.*'])
-      .pipe(gulp.dest('temp/fonts'));
+      .pipe(gulp.dest('dist/fonts'));
 });
 
 // Build
 gulp.task('build', function () {
-    return gulp.src('app/*.html')
+    return gulp.src('app/index.html')
       .pipe(useref())
       //.pipe(gulpif('*.js', uglify()))
       //.pipe(gulpif('*.css', minifyCss({compatibility: 'ie7'})))
-      .pipe(gulp.dest('temp'));
+      .pipe(gulp.dest('dist'));
 });
 
 // Bower
