@@ -1,7 +1,7 @@
 $(document).ready(function(){
   /***********************************/
-  /*$(".phone_button").colorbox({inline:true, href:"#form1"});
-  $(".menuRight_list__l2").each(function(){
+  $(".header_link").colorbox({inline:true, href:"#form1"});
+  /*$(".menuRight_list__l2").each(function(){
     $(this).hide();
   });*/
 

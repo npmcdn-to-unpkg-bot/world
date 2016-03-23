@@ -25,9 +25,9 @@
     #cboxContent{margin-top:32px; overflow:visible; background:transparent;}
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
-        #cboxLoadedContent{background:transparent; padding:1px;border-radius:23px}
+        #cboxLoadedContent{background:transparent; padding:1px;}
         //#cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
-        #cboxLoadingOverlay{background:transparent;border-radius: 22px;}
+        #cboxLoadingOverlay{/*background:transparent;*/background-color: #5da9b4;}
         #cboxTitle{position:absolute; top:-22px; left:0; color:#000;}
         #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
 
@@ -55,8 +55,8 @@
         #cboxClose{
             background:url(../images/form-popup-close.png) no-repeat 0px 0px;
             bottom: auto;
-            width: 13px;
-            height: 14px;
+            width: 22px;
+            height: 18px;
             top: 15px;
             right: 20px; 
             background-position: 0px 0px;
