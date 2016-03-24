@@ -1,0 +1,174 @@
+.page-comment-reply{
+		h2{
+			display: none;
+		}
+	}
+.comment-wrapper{
+	h2.title{
+		font-family: $fontBold;
+		font-size: 28px;
+		color: #f3953d;
+		margin: 58px 0 27px 0;
+		text-align: left;
+	}
+}
+.comment-form{
+	.form-actions{
+		margin: 20px 0 8px 0;
+		@include clearfix;
+		input{
+			float: right;
+			width: 206px;
+			background: url('../images/button-bac.png') repeat-x;
+			background-size: auto 100%;
+			border: none;
+			font-family: $fontBold;
+			font-size: 17px;
+			text-transform: uppercase;
+			color: #fdf9f9;
+			line-height: 2.1;
+			cursor: pointer;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.24);
+		}
+	}
+}
+body:not(.admin-menu){
+	/*.comment-wrapper{
+		h2.title{
+			font-family: $fontBold;
+			font-size: 28px;
+			color: #f3953d;
+			margin: 58px 0 27px 0;
+			text-align: left;
+		}
+	}*/
+	.page-comment-reply{
+		h2{
+			display: none;
+		}
+	}
+	form.comment-form{
+		position: relative;
+		height: 150px;
+		.form-item, .form-actions{
+			margin: 0;
+		}
+		.form-item-name{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 35.5%;
+			input{
+				width: 100%;
+				line-height: 3;
+				padding: 0 15px;
+				border: none;
+				text-align: center;
+				font-size: 16px;
+				box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.51);
+				/*&.error{
+					box-shadow: inset 0px 0px 5px 1px rgba(255,0,0,1),
+											1px 0px 1px 0px rgba(0,0,0,0.3);
+				}*/
+			}
+		}
+		.form-item-mail{
+			/*float: left;
+			width: 35.5%;*/
+			position: absolute;
+			left: 0;
+			top: 57px;
+			width: 35.5%;
+			input{
+				width: 100%;
+				line-height: 3;
+				padding: 0 15px;
+				border: none;
+				text-align: center;
+				font-size: 16px;
+				box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.51);
+				/*&.error{
+					box-shadow: inset 0px 0px 5px 1px rgba(255,0,0,1),
+											1px 0px 1px 0px rgba(0,0,0,0.3);
+				}*/
+			}
+		}
+		.field-name-comment-body{
+			position: absolute;
+			left: 37.7%;
+			top: 0;
+			width: 62.3%;
+			textarea{
+				width: 100%;
+				height: 105px;
+				padding: 15px;
+				border: none;
+				text-align: center;
+				box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.51);
+			}
+		}
+		.form-actions{
+			margin: 0 0 8px 0;
+			position: absolute;
+			right: 0;
+			top: 129px;
+			@include clearfix;
+			input{
+				float: right;
+				width: 206px;
+				background: url('../images/button-bac.png') repeat-x;
+				background-size: auto 100%;
+				border: none;
+				font-family: $fontBold;
+				font-size: 17px;
+				text-transform: uppercase;
+				color: #fdf9f9;
+				line-height: 2.1;
+				cursor: pointer;
+				box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.24);
+			}
+		}
+		::-webkit-input-placeholder {
+		  font-family: $font;
+		  color: #6a6a6d;
+		  font-size: 18px;
+		  line-height: 2.5;
+		  opacity: 0.7;
+		}
+		:-moz-placeholder {
+		  font-family: $font;
+		  color: #6a6a6d;
+		  font-size: 18px;
+		  line-height: 2.5;
+		  opacity: 0.7;
+		}
+		::-moz-placeholder {
+		  font-family: $font;
+		  color: #6a6a6d;
+		  font-size: 18px;
+		  line-height: 2.5;
+		  opacity: 0.7;
+		}
+		:-ms-input-placeholder {
+		  font-family: $font;
+		  color: #6a6a6d;
+		  font-size: 18px;
+		  line-height: 2.5;
+		  opacity: 0.7;
+		}
+		::-ms-input-placeholder {
+		  font-family: $font;
+		  color: #6a6a6d;
+		  font-size: 18px;
+		  line-height: 2.5;
+		  opacity: 0.7;
+		}
+		:placeholder-shown {
+		  font-family: $font;
+		  color: #6a6a6d;
+		  font-size: 18px;
+		  line-height: 2.5;
+		  opacity: 0.7;
+		}
+	}
+}

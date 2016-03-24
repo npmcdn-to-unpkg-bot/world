@@ -27,3 +27,14 @@
 #simplemeta-meta-form-ajax-wrapper span{
   box-sizing: content-box !important;
 }
+.comment-form{
+  .filter-wrapper{
+    display: none;
+  }
+  a[id*="switch_edit-comment-body"]{
+    display: none !important;;
+  }
+}
+.messages.error{
+  margin-bottom: 20px;
+}

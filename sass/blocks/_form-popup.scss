@@ -49,6 +49,12 @@
 			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.24);
 		}
 	}
+	&_confirmation{
+		p{
+			text-align: center;
+			color: #fdf9f9;
+		}
+	}
 	::-webkit-input-placeholder {
 	  font-family: $font;
 	  color: #6a6a6d;
