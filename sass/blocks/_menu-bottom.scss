@@ -16,14 +16,17 @@
 		padding-left: 22px;
 		position: relative;
 		&:before{
-			content: '';
+			content: '>';
+			font-family: $fontBold;
+			font-size: 22px;
+			color: #d67e2a;
 			position: absolute;
-			top: 5px;
+			top: -1px;
 			left: 0;
-			width: 13px;
+			/*width: 13px;
 			height: 16px;
 			background: url('../images/icons.png');
-			background-position: 0 -33px;
+			background-position: 0 -33px;*/
 		}
 	}
 	&_link{

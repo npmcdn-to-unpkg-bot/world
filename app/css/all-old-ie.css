@@ -184,7 +184,8 @@ body {
   font-size: 20px;
   line-height: 1.25;
   color: #212121;
-  min-width: 768px; }
+  min-width: 768px;
+  position: relative; }
 
 .inner {
   max-width: 1024px;
@@ -2859,6 +2860,9 @@ pre {
   @media all and (max-width: 1023px) {
     .header_link {
       line-height: 1.7; } }
+  .header_link:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
 
 .menu-top {
   padding: 7px 0; }
@@ -2904,11 +2908,15 @@ pre {
   .menu-main_list {
     background-color: #5da9b4;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24); }
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
+    height: 37px; }
+    @media all and (max-width: 1023px) {
+      .menu-main_list {
+        height: 34px; } }
     .menu-main_list__l2 {
       text-align: left;
       padding: 5px 0 3px;
-      min-width: 150px;
+      min-width: 200px;
       background-color: #5da9b4;
       visibility: hidden;
       -webkit-transform: translateY(-100%);
@@ -2947,7 +2955,7 @@ pre {
     display: inline-block;
     padding: 7px 12px 7px 17px;
     position: relative;
-    z-index: 11;
+    z-index: 29;
     *display: inline;
     *zoom: 1; }
     .menu-main_link:link {
@@ -2985,7 +2993,7 @@ pre {
     .menu-main_link__l2 {
       color: #fefdfd;
       font-family: AvantGardeCTT-Regular, sans-serif;
-      font-size: 11px;
+      font-size: 14px;
       text-decoration: none;
       display: block;
       padding: 3px 7px;
@@ -3175,7 +3183,7 @@ pre {
     text-indent: -999em;
     width: 9px;
     position: relative;
-    z-index: 99;
+    z-index: 29;
     -webkit-transition: all 0.5s linear 0s;
     transition: all 0.5s linear 0s;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
@@ -3230,7 +3238,7 @@ pre {
     background-image: url("../images/slider-arrows.png");
     cursor: pointer;
     position: absolute;
-    z-index: 99;
+    z-index: 29;
     margin-top: -45px;
     opacity: 0.5;
     -webkit-transition: opacity 0.35s linear 0s;
@@ -3416,7 +3424,7 @@ pre {
     padding: 12px 10px;
     text-align: center;
     background-color: #44a2b0;
-    color: #fefefe;
+    color: #fff;
     font-family: AvantGardeCTT-Bold, sans-serif;
     font-size: 18px;
     opacity: 0.8;
@@ -3479,6 +3487,9 @@ pre {
       cursor: pointer;
       -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24); }
+      .form-popup_button input:hover {
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
   .form-popup_confirmation p {
     text-align: center;
     color: #fdf9f9; }
@@ -3782,6 +3793,9 @@ pre {
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24); }
+    .contacts-form_button input:hover {
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
 
 .contacts-form ::-webkit-input-placeholder {
   font-family: AvantGardeCTT-Regular, sans-serif;
@@ -3854,7 +3868,7 @@ pre {
         position: absolute;
         bottom: 8px;
         right: 13px;
-        font-size: 10px;
+        font-size: 12px;
         color: #282828; }
     .sidelki_item:nth-child(even) span {
       background-color: #de832c; }
@@ -4053,7 +4067,7 @@ pre {
 
 .services ul {
   margin: -16px 0 58px 0;
-  padding: 0 68px;
+  padding: 0 38px 0 38px;
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
@@ -4063,12 +4077,13 @@ pre {
   .services ul li {
     margin-bottom: 5px;
     position: relative;
-    font-size: 21px; }
+    font-size: 21px;
+    padding-left: 30px; }
     .services ul li:before {
       content: "";
       position: absolute;
       top: 12px;
-      left: -29px;
+      left: 0;
       width: 11px;
       height: 5px;
       background-color: #5da9b4; }
@@ -4144,7 +4159,7 @@ pre {
   background-color: #53a9b6; }
 
 .footer_bottom {
-  background-color: #69696c;
+  background: url("../images/footer-bac.png") #69696c;
   padding: 28px 0 55px; }
 
 .footer_wrap {
@@ -4173,7 +4188,7 @@ pre {
   display: block;
   max-width: 235px;
   float: right;
-  margin-bottom: 60px;
+  margin-bottom: 78px;
   position: relative;
   top: -11px; }
   .footer_logo img {
@@ -4194,14 +4209,17 @@ pre {
   padding-left: 22px;
   position: relative; }
   .menu-bottom_item:before {
-    content: '';
+    content: '>';
+    font-family: AvantGardeCTT-Bold, sans-serif;
+    font-size: 22px;
+    color: #d67e2a;
     position: absolute;
-    top: 5px;
+    top: -1px;
     left: 0;
-    width: 13px;
-    height: 16px;
-    background: url("../images/icons.png");
-    background-position: 0 -33px; }
+    /*width: 13px;
+			height: 16px;
+			background: url('../images/icons.png');
+			background-position: 0 -33px;*/ }
 
 .menu-bottom_link {
   font-size: 19px;
@@ -4235,7 +4253,7 @@ pre {
 .wfs {
   float: right;
   max-width: 226px;
-  height: 65px;
+  height: 43px;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -4333,6 +4351,9 @@ pre {
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24); }
+    .comment-form .form-actions input:hover {
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
 
 body:not(.admin-menu) {
   /*.comment-wrapper{
@@ -4395,6 +4416,8 @@ body:not(.admin-menu) {
       top: 0;
       width: 62.3%; }
       body:not(.admin-menu) form.comment-form .field-name-comment-body textarea {
+        font-family: AvantGardeCTT-Regular, sans-serif;
+        font-size: 16px;
         width: 100%;
         height: 105px;
         padding: 15px;
@@ -4429,6 +4452,9 @@ body:not(.admin-menu) {
         cursor: pointer;
         -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24); }
+        body:not(.admin-menu) form.comment-form .form-actions input:hover {
+          -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
     body:not(.admin-menu) form.comment-form ::-webkit-input-placeholder {
       font-family: AvantGardeCTT-Regular, sans-serif;
       color: #6a6a6d;
@@ -4475,7 +4501,7 @@ body:not(.admin-menu) {
   background: url("../images/location-bac.png") repeat-x;
   width: 100%;
   height: 100%;
-  min-height: 141px;
+  min-height: 91px;
   position: relative;
   padding: 18px 0 0 15px; }
   .location:before {
@@ -4483,10 +4509,67 @@ body:not(.admin-menu) {
     position: absolute;
     width: 126px;
     height: 44px;
-    top: 124px;
+    top: 74px;
     left: 50%;
     margin-left: -63px;
     background: url("../images/location-arrow.png");
     z-index: 9999; }
   .location p {
     color: #fcfbfa; }
+
+.special {
+  padding: 12px;
+  background-color: #ff0000;
+  position: fixed;
+  z-index: 30;
+  right: 0;
+  top: 50%;
+  margin-top: -85px; }
+  .special_wrap {
+    position: relative;
+    background-color: #ff0000;
+    border: 1px dotted #fef1e4;
+    padding: 17px 25px 25px 25px; }
+    .special_wrap:before {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      margin-top: -41px;
+      left: -30px;
+      width: 34px;
+      height: 82px;
+      background: url("../images/special.png"); }
+    .special_wrap a {
+      display: block;
+      height: 100%;
+      margin: -17px -25px -25px -25px;
+      padding: 17px 25px 25px 25px;
+      color: #fdfdfd;
+      text-decoration: none; }
+      .special_wrap a:link {
+        color: #fdfdfd; }
+      .special_wrap a:visited {
+        color: #fdfdfd; }
+      .special_wrap a:hover {
+        color: #fdfdfd; }
+      .special_wrap a:active {
+        color: #fdfdfd; }
+    .special_wrap p {
+      color: #fdfdfd;
+      text-align: center; }
+  .special_close {
+    background: url("../images/form-popup-close.png");
+    bottom: auto;
+    height: 18px;
+    opacity: 0.8;
+    right: 20px;
+    top: 18px;
+    width: 22px;
+    margin: 0;
+    position: absolute;
+    text-indent: -9999px;
+    cursor: pointer;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s; }
+    .special_close:hover {
+      opacity: 1; }

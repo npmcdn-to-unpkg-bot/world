@@ -47,6 +47,9 @@
 			line-height: 2.1;
 			cursor: pointer;
 			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.24);
+			&:hover{
+				box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+			}
 		}
 	}
 	&_confirmation{

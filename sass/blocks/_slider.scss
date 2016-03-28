@@ -132,7 +132,7 @@
       text-indent: -999em;
       width: 9px;
       position: relative;
-      z-index: 99;
+      z-index: 29;
       -webkit-transition: all 0.5s linear 0s;
       transition: all 0.5s linear 0s;
       box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
@@ -199,7 +199,7 @@
       background-image: url('../images/slider-arrows.png');
       cursor: pointer;
       position: absolute;
-      z-index: 99;
+      z-index: 29;
       margin-top: -45px;
       opacity: 0.5;
       -webkit-transition: opacity 0.35s linear 0s;
