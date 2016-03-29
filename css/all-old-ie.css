@@ -3847,7 +3847,15 @@ pre {
     float: left;
     width: 22.5%;
     margin: 0 1.25%;
-    text-decoration: none; }
+    text-decoration: none;
+    position: relative; }
+    .sidelki_item:before {
+      content: 'Подробнее >>';
+      position: absolute;
+      bottom: 8px;
+      right: 13px;
+      font-size: 12px;
+      color: #282828; }
     .sidelki_item img {
       width: 100%;
       height: auto;
@@ -3855,25 +3863,21 @@ pre {
     .sidelki_item span {
       display: block;
       width: 100%;
-      background-color: #44a2b0;
       font-size: 16px;
       color: #fefefe;
-      text-align: center;
-      padding: 12px 5px 26px 5px;
-      position: relative;
-      -webkit-transition: background-color 0.2s;
-      transition: background-color 0.2s; }
-      .sidelki_item span:before {
-        content: 'Подробнее >>';
-        position: absolute;
-        bottom: 8px;
-        right: 13px;
-        font-size: 12px;
-        color: #282828; }
-    .sidelki_item:nth-child(even) span {
+      padding: 0 5px 0 5px; }
+  .sidelki_info {
+    min-height: 125px;
+    padding: 10px 0 0 10px;
+    background-color: #44a2b0;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s; }
+    .sidelki_item:nth-child(even) .sidelki_info {
       background-color: #de832c; }
-    .sidelki_item:hover span {
+    .sidelki_item:hover .sidelki_info {
       background-color: #7f7f82; }
+  .sidelki_name {
+    margin-bottom: 5px; }
 
 .mypager {
   text-align: center;
@@ -3927,6 +3931,8 @@ pre {
     margin-top: 15px;
     margin-bottom: 24px;
     text-align: justify; }
+  .sidelka_info p {
+    margin: 10px 0; }
 
 .about img:first-child {
   display: block;
