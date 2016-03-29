@@ -6,7 +6,7 @@
 	}
 	&_bottom{
 		background: url('../images/footer-bac.png') #69696c;
-		padding: 28px 0 55px;
+		padding: 28px 0 15px;
 	}
 	&_wrap{
 		@include clearfix;
@@ -27,7 +27,7 @@
 		display: block;
 		max-width: 235px;
 		float: right;
-		margin-bottom: 78px;
+		margin-bottom: 49px;
 		position: relative;
 		top: -11px;
 		img{

@@ -3458,6 +3458,7 @@ pre {
   .form-popup_inner {
     margin: 0 0 25px 0; }
     .form-popup_inner input {
+      height: 48px;
       width: 100%;
       line-height: 3;
       padding: 0 15px;
@@ -3666,7 +3667,7 @@ pre {
     .mybreadcrumb_link:before {
       content: ">";
       color: #6a6767;
-      font-size: 13px;
+      font-size: 12px;
       position: absolute;
       top: 0;
       left: -12px; }
@@ -3694,7 +3695,7 @@ pre {
     .mybreadcrumb_item:before {
       content: ">";
       color: #6a6767;
-      font-size: 13px;
+      font-size: 12px;
       position: absolute;
       top: 0;
       left: -12px; }
@@ -3721,6 +3722,22 @@ pre {
     font-size: 24px;
     color: #6a6a6d;
     margin-bottom: 7px; }
+  .user-content ul {
+    margin: 0 0 58px 0;
+    padding: 0 38px 0 38px; }
+    .user-content ul li {
+      margin-bottom: 5px;
+      position: relative;
+      font-size: 21px;
+      padding-left: 30px; }
+      .user-content ul li:before {
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: 0;
+        width: 11px;
+        height: 5px;
+        background-color: #5da9b4; }
 
 .contacts_wrap {
   *zoom: 1; }
@@ -3752,6 +3769,7 @@ pre {
 .contacts-form_inner {
   margin: 0 0 10px 0; }
   .contacts-form_inner input {
+    height: 48px;
     width: 100%;
     line-height: 3;
     padding: 0 15px;
@@ -3767,6 +3785,7 @@ pre {
 .contacts-form_text {
   margin: 25px 0 10px 0; }
   .contacts-form_text textarea {
+    overflow: auto;
     width: 100%;
     height: 160px;
     padding: 15px;
@@ -4166,7 +4185,7 @@ pre {
 
 .footer_bottom {
   background: url("../images/footer-bac.png") #69696c;
-  padding: 28px 0 55px; }
+  padding: 28px 0 15px; }
 
 .footer_wrap {
   *zoom: 1; }
@@ -4194,7 +4213,7 @@ pre {
   display: block;
   max-width: 235px;
   float: right;
-  margin-bottom: 78px;
+  margin-bottom: 49px;
   position: relative;
   top: -11px; }
   .footer_logo img {
@@ -4384,6 +4403,7 @@ body:not(.admin-menu) {
       top: 0;
       width: 35.5%; }
       body:not(.admin-menu) form.comment-form .form-item-name input {
+        height: 48px;
         width: 100%;
         line-height: 3;
         padding: 0 15px;
@@ -4404,6 +4424,7 @@ body:not(.admin-menu) {
       top: 57px;
       width: 35.5%; }
       body:not(.admin-menu) form.comment-form .form-item-mail input {
+        height: 48px;
         width: 100%;
         line-height: 3;
         padding: 0 15px;
@@ -4422,6 +4443,7 @@ body:not(.admin-menu) {
       top: 0;
       width: 62.3%; }
       body:not(.admin-menu) form.comment-form .field-name-comment-body textarea {
+        overflow: auto;
         font-family: AvantGardeCTT-Regular, sans-serif;
         font-size: 16px;
         width: 100%;
