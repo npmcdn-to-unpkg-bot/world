@@ -39,7 +39,7 @@
 		}
 	}
 	&_button{
-		margin: 35px 0 8px 0;
+		margin: 20px 0 8px 0;
 		position: relative;
 		input{
 			display: block;
@@ -59,6 +59,10 @@
 				box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 			}
 		}
+	}
+	&_note{
+		font-size: 11px;
+		color: #6a6a6d;
 	}
 	::-webkit-input-placeholder {
 	  font-family: $font;

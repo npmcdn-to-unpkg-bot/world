@@ -10,12 +10,18 @@
 	}
 	&_left{
 		float: left;
-		width: 41%;
+		width: 59%;
+		text-align: left;
+		img{
+			width: 100%;
+			height: auto;
+			max-width: 573px;
+		}
 	}
 	&_right{
 		float: left;
-		width: 59%;
-		text-align: right;
+		width: 41%;
+		//text-align: right;
 		img{
 			width: 100%;
 			height: auto;

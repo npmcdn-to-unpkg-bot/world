@@ -3079,11 +3079,15 @@ pre {
     clear: both; }
   .slider_left {
     float: left;
-    width: 41%; }
+    width: 59%;
+    text-align: left; }
+    .slider_left img {
+      width: 100%;
+      height: auto;
+      max-width: 573px; }
   .slider_right {
     float: left;
-    width: 59%;
-    text-align: right; }
+    width: 41%; }
     .slider_right img {
       width: 100%;
       height: auto;
@@ -3448,7 +3452,7 @@ pre {
   .form-popup_inner {
     margin: 0 0 25px 0; }
     .form-popup_inner input {
-      height: 48px;
+      height: 58px;
       width: 100%;
       line-height: 3;
       padding: 0 15px;
@@ -3760,7 +3764,7 @@ pre {
     box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.51); }
 
 .contacts-form_button {
-  margin: 35px 0 8px 0;
+  margin: 20px 0 8px 0;
   position: relative; }
   .contacts-form_button input {
     display: block;
@@ -3780,6 +3784,10 @@ pre {
     .contacts-form_button input:hover {
       -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
+
+.contacts-form_note {
+  font-size: 11px;
+  color: #6a6a6d; }
 
 .contacts-form ::-webkit-input-placeholder {
   font-family: AvantGardeCTT-Regular, sans-serif;
@@ -4071,6 +4079,7 @@ pre {
     .services ul li:before {
       content: "";
       position: absolute;
+      display: block;
       top: 12px;
       left: 0;
       width: 11px;
@@ -4140,13 +4149,14 @@ pre {
       font-size: 20px; }
 
 .footer_top {
-  -webkit-box-shadow: inset 0 15px 7px -15px rgba(94, 94, 94, 0.6), inset 0 -15px 7px -15px rgba(94, 94, 94, 0.3);
-  box-shadow: inset 0 15px 7px -15px rgba(94, 94, 94, 0.6), inset 0 -15px 7px -15px rgba(94, 94, 94, 0.3);
+  -webkit-box-shadow: inset 0 15px 7px -10px rgba(94, 94, 94, 0.6), inset 0 -15px 7px -10px rgba(94, 94, 94, 0.6);
+  box-shadow: inset 0 15px 7px -10px rgba(94, 94, 94, 0.6), inset 0 -15px 7px -10px rgba(94, 94, 94, 0.6);
   background-color: #53a9b6; }
 
 .footer_bottom {
-  background: url("../images/footer-bac.png") #69696c;
-  padding: 28px 0 15px; }
+  background: url("../images/footer-bac.jpg") repeat;
+  padding: 28px 0 15px;
+  background-size: cover; }
 
 .footer_wrap:before, .footer_wrap:after {
   content: ".";
