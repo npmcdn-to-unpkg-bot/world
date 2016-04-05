@@ -11,6 +11,7 @@
 	}
 	&_wrap{
 		@include clearfix;
+		position: relative;
 	}
 	&_item{
 		float: left;
@@ -26,9 +27,8 @@
 	&_logo{
 		margin-top: 18px;
 		display: block;
-		max-width: 235px;
+		max-width: 200px;
 		float: right;
-		margin-bottom: 55px;
 		position: relative;
 		top: -11px;
 		img{
@@ -39,9 +39,9 @@
 	&_copy{
 		float: right;
 		width: 230px;
-		max-width: 230px;
+		max-width: 200px;
 		text-align: center;
 		color: #fffefe;
-		margin-top: 15px;
+		font-size: 16px;
 	}
 }

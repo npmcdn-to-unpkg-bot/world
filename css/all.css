@@ -4158,14 +4158,15 @@ pre {
   padding: 28px 0 15px;
   background-size: cover; }
 
-.footer_wrap:before, .footer_wrap:after {
-  content: ".";
-  display: block;
-  height: 0;
-  overflow: hidden; }
-
-.footer_wrap:after {
-  clear: both; }
+.footer_wrap {
+  position: relative; }
+  .footer_wrap:before, .footer_wrap:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .footer_wrap:after {
+    clear: both; }
 
 .footer_item {
   float: left;
@@ -4181,9 +4182,8 @@ pre {
 .footer_logo {
   margin-top: 18px;
   display: block;
-  max-width: 235px;
+  max-width: 200px;
   float: right;
-  margin-bottom: 55px;
   position: relative;
   top: -11px; }
   .footer_logo img {
@@ -4193,10 +4193,10 @@ pre {
 .footer_copy {
   float: right;
   width: 230px;
-  max-width: 230px;
+  max-width: 200px;
   text-align: center;
   color: #fffefe;
-  margin-top: 15px; }
+  font-size: 16px; }
 
 .menu-bottom_title {
   color: #fdfdfd;
@@ -4254,13 +4254,17 @@ pre {
   color: #fdfcfc; }
 
 .wfs {
-  float: right;
-  max-width: 226px;
+  display: block;
+  position: absolute;
+  bottom: 6px;
+  right: 0;
+  max-width: 200px;
   height: 43px;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background: url("../images/wfs.png"); }
+  background: url("../images/wfs.png") no-repeat;
+  background-size: contain; }
 
 .title {
   text-align: center; }

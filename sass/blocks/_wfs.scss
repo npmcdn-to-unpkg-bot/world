@@ -1,9 +1,14 @@
 .wfs{
-	float: right;
-	max-width: 226px;
+	//float: right;
+	display: block;
+	position: absolute;
+	bottom: 6px;
+	right: 0;
+	max-width: 200px;
 	height: 43px;
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
-	background: url('../images/wfs.png');
+	background: url('../images/wfs.png') no-repeat;
+	background-size: contain;
 }
