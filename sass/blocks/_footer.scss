@@ -28,12 +28,20 @@
 		display: block;
 		max-width: 235px;
 		float: right;
-		margin-bottom: 49px;
+		margin-bottom: 55px;
 		position: relative;
 		top: -11px;
 		img{
 			width: 100%;
 			height: auto;
 		}
+	}
+	&_copy{
+		float: right;
+		width: 230px;
+		max-width: 230px;
+		text-align: center;
+		color: #fffefe;
+		margin-top: 15px;
 	}
 }
