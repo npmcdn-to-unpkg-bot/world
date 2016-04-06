@@ -2875,7 +2875,9 @@ pre {
       border: none; }
   .menu-top_link {
     color: #fdfdfd;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: AvantGardeCTT-Bold, sans-serif;
+    font-size: 18px; }
     .menu-top_link:link {
       color: #fdfdfd; }
     .menu-top_link:visited {

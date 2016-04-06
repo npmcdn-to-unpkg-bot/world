@@ -12,6 +12,8 @@
 	&_link{
 		@include link(#fdfdfd, #323232);
 		text-decoration: none;
+		font-family: $fontBold;
+		font-size: 18px;
 		&__active{
 			@include link(#323232, #323232);
 		}
